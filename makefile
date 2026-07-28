@@ -1,18 +1,18 @@
 # - configuration ------------------------------------------------------------ #
 
-CC := tcc
+CC := gcc
 CCFLAGS :=
-LD := tcc
+LD := gcc
 LDFLAGS := -lX11 -lXtst -lraylib
 
 SRC_DIR := ./src
 BIN_DIR := ./bin
 OBJ_DIR := $(BIN_DIR)/obj
-TARGET_BIN := $(BIN_DIR)/aclick
+TARGET_BIN := $(BIN_DIR)/aclick-linux
 
 # - variables ---------------------------------------------------------------- #
 
-Q :=
+Q := 
 
 SRC_FILES := $(shell find $(SRC_DIR) | grep -i ".*\.c")
 OBJ_FILES := $(patsubst %.c, %.o, $(SRC_FILES))

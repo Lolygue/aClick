@@ -21,11 +21,7 @@ Libraries (most will be dnf package names):
 
 Compilers:
 
-* `tcc`
-
-**Notice:** If you are using **gcc** instead of **tcc**, change the makefile parameters `CC` and `LD` to use **gcc** instead of **tcc**.
-
-**Warning:** gcc builds will be bigger than tcc builds. Only build with tcc when uploading releases.
+* `gcc`
 
 ## Commands
 
